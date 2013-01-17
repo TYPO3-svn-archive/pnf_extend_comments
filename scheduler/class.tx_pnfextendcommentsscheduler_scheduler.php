@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2012 In Cite Solution (technique@in-cite.net)
+*  (c) 2012 Plan.Net France (typo3@plan-net.fr)
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -22,7 +22,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-class tx_pnfcommentsscheduler_scheduler extends tx_scheduler_Task {
+class tx_pnfextendcomments_scheduler extends tx_scheduler_Task {
 
 	/**
 	 * Function executed from scheduler.
@@ -32,15 +32,15 @@ class tx_pnfcommentsscheduler_scheduler extends tx_scheduler_Task {
 	 */
 	function execute() {
 		global $LANG;
-		$helper = new tx_pnfcommentsscheduler_helper();
+		$helper = new tx_pnfextendcomment_helper();
 		
 		return $helper->sendAlert();
 		
 	}
 }
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfcommentsscheduler_scheduler.php']) {
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfcommentsscheduler_scheduler.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfextendcomments_scheduler.php']) {
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfextendcomments_scheduler.php']);
 }
 
 ?>

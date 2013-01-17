@@ -4,7 +4,7 @@
 
 $extensionPath = t3lib_extMgm::extPath('pnf_extend_comments');
 return array(
-	'tx_pnfcommentsscheduler_helper' => $extensionPath . 'scheduler/class.tx_pnfcommentsscheduler_helper.php',
-	'tx_pnfcommentsscheduler_scheduler' => $extensionPath . 'scheduler/class.tx_pnfcommentsscheduler_scheduler.php',
+	'tx_pnfextendcomments_helper' => $extensionPath . 'scheduler/class.tx_pnfextendcomments_helper.php',
+	'tx_pnfextendcomments_scheduler' => $extensionPath . 'scheduler/class.tx_pnfextendcomments_scheduler.php',
 );
 ?>

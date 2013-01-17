@@ -7,7 +7,7 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['comments']['closeCommentsAfter'][] = 'EX
 
 $GLOBALS['TYPO3_CONF_VARS']['FE']['XCLASS']['ext/comments/pi1/class.tx_comments_pi1.php'] = t3lib_extMgm::extPath($_EXTKEY) . 'class.ux_tx_comments_pi1.php';
 
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['tx_pnfcommentsscheduler_scheduler'] = array(
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['tx_pnfcomments_scheduler'] = array(
 	'extension'			=> $_EXTKEY,
 	'title'				=> 'Comments alert',
 	'description'		=> 'Send an email alert ',	

@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2012 In Cite Solution (technique@in-cite.net)
+*  (c) 2012 Plan.Net France (typo3@plan-net.fr)
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -22,7 +22,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-class tx_pnfcommentsscheduler_helper {
+class tx_pnfextendcomments_helper {
 	function sendAlert() {
 		$tsconfig = t3lib_BEfunc::getModTSconfig(1, 'tx_commentsscheduler_cli'); // get whole tsconfig from backend
 		$this->cObj = t3lib_div::makeInstance('tslib_cObj');
@@ -127,8 +127,8 @@ class tx_pnfcommentsscheduler_helper {
 	}
 }
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfcommentsscheduler_helper.php']) {
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfcommentsscheduler_helper.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfextendcomments_helper.php']) {
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/pnf_extend_comments/scheduler/class.tx_pnfextendcomments_helper.php']);
 }
 
 ?>
