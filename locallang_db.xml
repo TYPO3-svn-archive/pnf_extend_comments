@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'pnf_extend_comments'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pages.tx_pnfextendcomments_comments">Comments</label>
+			<label index="pages.tx_pnfextendcomments_commentsclosed">Close Comments</label>
+			<label index="pages.tx_pnfextendcomments_email">Email for alerts</label>
+		</languageKey>
+		<languageKey index="default" type="array">
+			<label index="pages.tx_pnfextendcomments_comments">Commentaires</label>
+			<label index="pages.tx_pnfextendcomments_commentsclosed">Fermer les commentaires</label>
+			<label index="pages.tx_pnfextendcomments_email">Email pour les alertes</label>
+		</languageKey>
+	</data>
+</T3locallang>
