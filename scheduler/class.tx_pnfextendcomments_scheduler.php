@@ -32,7 +32,7 @@ class tx_pnfextendcomments_scheduler extends tx_scheduler_Task {
 	 */
 	function execute() {
 		global $LANG;
-		$helper = new tx_pnfextendcomment_helper();
+		$helper = new tx_pnfextendcomments_helper();
 		
 		return $helper->sendAlert();
 		

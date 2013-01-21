@@ -24,7 +24,7 @@
 
 class tx_pnfextendcomments_helper {
 	function sendAlert() {
-		$tsconfig = t3lib_BEfunc::getModTSconfig(1, 'tx_commentsscheduler_cli'); // get whole tsconfig from backend
+		$tsconfig = t3lib_BEfunc::getModTSconfig(1, 'tx_pnfextendcomments_cli'); // get whole tsconfig from backend
 		$this->cObj = t3lib_div::makeInstance('tslib_cObj');
 		$comments = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
 			'pid,`tstamp`',
